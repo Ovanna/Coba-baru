@@ -33,11 +33,6 @@ public class JavaCRUD {
         return serviceToDo.findById(id);
     }
 
-    @GetMapping
-    public Iterable<ToDo> findAll() {
-        return serviceToDo.findAll();
-    }
-    
     @PutMapping
     public ToDo update(@RequestBody ToDo todo) {
         return serviceToDo.save(todo);
